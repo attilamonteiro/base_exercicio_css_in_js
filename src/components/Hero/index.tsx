@@ -1,13 +1,17 @@
-import styles from './Hero.module.css'
+// src/components/Hero/index.tsx
+import { HeroContainer, Overlay, HeroContent, HeroTitle } from './Hero.styles'
 
 const Hero = () => (
-  <form className={styles.form}>
+  <HeroContainer>
+    <Overlay />
     <div className="container">
-      <h2 className={styles.heroTitle}>
-        As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
+      <HeroContent>
+        <HeroTitle>
+          As melhores vagas para tecnologia, design e artes visuais.
+        </HeroTitle>
+      </HeroContent>
     </div>
-  </form>
+  </HeroContainer>
 )
 
 export default Hero
